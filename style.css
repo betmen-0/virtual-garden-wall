@@ -36,3 +36,54 @@ canvas {
     height: 100px;
 }
 
+#delete {
+    display: flex;
+    border-radius: 100%;
+    height: 35px;
+    width: 35px;
+    margin-left: 10px;
+    background-color: #cd747b;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+p {
+    text-align: center;
+}
+
+#bg-selection-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-color {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    padding: 2px;
+}
+
+#blue {
+    background-color: #c5d6e0;
+}
+
+#pink {
+    background-color: #f0d3d3;
+}
+
+#ivory {
+    background-color: #dfd6d1;
+}
+
+#cream {
+    background-color: blanchedalmond;
+}
+
+#green {
+    background-color: #c0cfb2;
+}
