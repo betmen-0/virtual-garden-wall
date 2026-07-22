@@ -53,7 +53,7 @@ p {
     text-align: center;
 }
 
-#bg-selection-items {
+#bg-selection-items , #toolbox-items {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -66,6 +66,7 @@ p {
     height: 25px;
     border-radius: 100%;
     padding: 2px;
+    cursor: pointer;
 }
 
 #blue {
@@ -87,3 +88,63 @@ p {
 #green {
     background-color: #c0cfb2;
 }
+
+#toolbox {
+    border-radius: 10px;
+    width: auto;
+}
+
+.item {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    border-radius: 10px;
+    background: blanchedalmond;
+    background-repeat: no-repeat;
+    background-size: 200%;
+    padding: 2px;
+}
+
+#ranunculus {
+    background: url("assets/ranunculus.svg") center/contain no-repeat;
+    background-color: blanchedalmond;
+    
+}
+
+#rose {
+    background: url("assets/rose.svg") center/contain no-repeat;
+    background-color: blanchedalmond;
+    /* border: 2px solid transparent; */
+}
+
+#monstera {
+    background: url("assets/monstera.svg") center/contain no-repeat ;
+    background-color: blanchedalmond;
+}
+
+#hibiscus {
+    background: url("assets/hibiscus.svg") center/contain no-repeat;
+    background-color: blanchedalmond;
+}
+
+
+#almond {
+    background: url("assets/almond.svg") center/contain no-repeat;
+    background-color: blanchedalmond;
+}
+
+#sunflowers {
+    background: url("assets/sunflowers.svg") center/contain no-repeat;
+    background-color: blanchedalmond;
+}
+
+#glass-rose {
+    background: url("assets/baptism.svg") center/contain no-repeat;
+    background-color: blanchedalmond;
+}
+
+#bouquet {
+    background: url("assets/bouquet.svg") center/contain no-repeat;
+    background-color: blanchedalmond;
+}
+
