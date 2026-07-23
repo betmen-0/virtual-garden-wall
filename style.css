@@ -1,64 +1,98 @@
 * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
     font-family: "Playwrite HU", cursive;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    color: #222222;
+    color: #2c3b2a;
+    background:
+        linear-gradient(rgba(248, 244, 237, 0.35), rgba(248, 244, 237, 0.35)),
+        url(assets/bg.jpg) center/cover fixed no-repeat;
 }
 
 main {
+    width: min(960px, calc(100% - 24px));
+    margin: 24px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 50px;
+    gap: 16px;
+    padding: 24px 20px 32px;
+    border-radius: 24px;
+    background: rgba(252, 249, 244, 0.78);
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(97, 118, 84, 0.26);
+    box-shadow: 0 14px 38px rgba(61, 71, 50, 0.14);
 }
 
 #canvas-container {
     display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.45);
+    border: 1px solid rgba(97, 118, 84, 0.22);
 }
 
 canvas {
-    background-color: #BBC397;
-    border-radius: 10px;
+    background-color: #d9dfbe;
+    border-radius: 14px;
+    border: 2px solid rgba(79, 101, 66, 0.28);
 }
 
 .about {
-    margin-right: 10px;
-    align-items: end;
-    cursor: pointer;
+    margin-right: 6px;
     display: flex;
     justify-content: center;
     text-align: center;
+    cursor: pointer;
 }
 
 #github {
     position: relative;
     height: 100px;
+    border-radius: 16px;
 }
 
 #delete {
     display: flex;
     border-radius: 100%;
-    height: 35px;
-    width: 35px;
-    margin-left: 10px;
-    background-color: #cd747b;
+    height: 38px;
+    width: 38px;
+    margin-left: 6px;
+    background-color: #a95f64;
     text-align: center;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    box-shadow: 0 6px 16px rgba(169, 95, 100, 0.28);
 }
 
 p {
+    margin: 0 0 10px;
     text-align: center;
-    font-weight: bolder;
+    font-weight: 700;
+    color: #41513a;
 }
 
 h2 {
-    font-weight: 600;
+    margin: 0;
+    font-weight: 700;
+    color: #34412e;
+    text-align: center;
 }
 
-#bg-selection-items , #toolbox-items {
+#bg-selection-items,
+#toolbox-items {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -67,11 +101,12 @@ h2 {
 }
 
 .bg-color {
-    width: 25px;
-    height: 25px;
+    width: 28px;
+    height: 28px;
     border-radius: 100%;
     padding: 2px;
     cursor: pointer;
+    border: 2px solid rgba(69, 82, 58, 0.18);
 }
 
 #blue {
@@ -87,7 +122,7 @@ h2 {
 }
 
 #cream {
-    background-color: blanchedalmond;
+    background-color: #f5e6c8;
 }
 
 #green {
@@ -95,85 +130,96 @@ h2 {
 }
 
 #toolbox {
-    border-radius: 10px;
-    width: auto;
+    width: 100%;
+    max-width: 560px;
+    border-radius: 16px;
+    padding: 14px;
+    background: rgba(255, 255, 255, 0.56);
+    border: 1px solid rgba(97, 118, 84, 0.22);
 }
 
 .item {
     width: 80px;
     height: 80px;
     text-align: center;
-    border-radius: 10px;
-    background: blanchedalmond;
+    border-radius: 12px;
+    background: #f9f1df;
     background-repeat: no-repeat;
     background-size: 200%;
     padding: 2px;
     cursor: pointer;
+    border: 2px solid rgba(106, 127, 92, 0.18);
+    transition: transform 0.18s ease, box-shadow 0.18s ease, background-color 0.18s ease;
 }
 
 .item:hover {
-    background-color: #c5d6e0;
+    transform: translateY(-2px);
+    background-color: #dfe8cd;
+    box-shadow: 0 8px 18px rgba(69, 82, 58, 0.16);
 }
 
 #ranunculus {
     background: url("assets/ranunculus.svg") center/contain no-repeat;
-    background-color: blanchedalmond;
-    
+    background-color: #f9f1df;
 }
 
 #rose {
     background: url("assets/rose.svg") center/contain no-repeat;
-    background-color: blanchedalmond;
-    /* border: 2px solid transparent; */
+    background-color: #f9f1df;
 }
 
 #monstera {
-    background: url("assets/monstera.svg") center/contain no-repeat ;
-    background-color: blanchedalmond;
+    background: url("assets/monstera.svg") center/contain no-repeat;
+    background-color: #f9f1df;
 }
 
 #hibiscus {
     background: url("assets/hibiscus.svg") center/contain no-repeat;
-    background-color: blanchedalmond;
+    background-color: #f9f1df;
 }
-
 
 #almond {
     background: url("assets/almond.svg") center/contain no-repeat;
-    background-color: blanchedalmond;
+    background-color: #f9f1df;
 }
 
 #sunflowers {
     background: url("assets/sunflowers.svg") center/contain no-repeat;
-    background-color: blanchedalmond;
+    background-color: #f9f1df;
 }
 
 #glass-rose {
     background: url("assets/baptism.svg") center/contain no-repeat;
-    background-color: blanchedalmond;
+    background-color: #f9f1df;
 }
 
 #bouquet {
     background: url("assets/bouquet.svg") center/contain no-repeat;
-    background-color: blanchedalmond;
+    background-color: #f9f1df;
 }
 
 #download {
     font-size: 1rem;
-    margin: 20px;
+    margin: 10px 0 0;
     background-color: #f0d3d3;
-    border-radius: 10px;
-    padding: 5px;
+    color: #3c4032;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 16px;
     font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 8px 18px rgba(240, 211, 211, 0.45);
+    transition: transform 0.18s ease, background-color 0.18s ease;
 }
 
 #download:hover {
     background-color: #c0cfb2;
-    transform: translateX(-2px);
+    transform: translateY(-1px);
 }
 
 .active {
-    border: 2px solid #888888;
-    padding: 0px;
+    border: 2px solid #6a7652;
+    padding: 0;
+    box-shadow: 0 0 0 3px rgba(106, 118, 82, 0.18);
 }
