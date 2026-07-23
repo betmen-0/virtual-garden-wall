@@ -51,6 +51,11 @@ canvas {
 
 p {
     text-align: center;
+    font-weight: bolder;
+}
+
+h2 {
+    font-weight: 600;
 }
 
 #bg-selection-items , #toolbox-items {
@@ -168,3 +173,7 @@ p {
     transform: translateX(-2px);
 }
 
+.active {
+    border: 2px solid #888888;
+    padding: 0px;
+}
