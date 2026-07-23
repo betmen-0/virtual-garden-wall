@@ -103,6 +103,11 @@ p {
     background-repeat: no-repeat;
     background-size: 200%;
     padding: 2px;
+    cursor: pointer;
+}
+
+.item:hover {
+    background-color: #c5d6e0;
 }
 
 #ranunculus {
@@ -146,5 +151,20 @@ p {
 #bouquet {
     background: url("assets/bouquet.svg") center/contain no-repeat;
     background-color: blanchedalmond;
+}
+
+#download {
+    font-size: 1rem;
+    margin: 20px;
+    background-color: #f0d3d3;
+    border-radius: 10px;
+    padding: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+#download:hover {
+    background-color: #c0cfb2;
+    transform: translateX(-2px);
 }
 
