@@ -84,16 +84,6 @@ ivory.onclick = function () {
     updateButtons();
 };
 
-cream.onclick = function () {
-    ivoryActive = true;
-
-    if (ivoryActive) {
-        blueActive = pinkActive = creamActive = greenActive = false;
-        background.fill(colors.ivory);
-    }
-
-    updateButtons();
-};
 
 cream.onclick = function () {
     creamActive = true;
