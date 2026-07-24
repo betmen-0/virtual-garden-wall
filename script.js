@@ -134,3 +134,36 @@ const circle = new Konva.Circle({
 
 layer.add(circle);
 
+const RANUNCULUS = elementsURL.ranunculus;
+const ROSE = elementsURL.rose;
+const MONSTERA = elementsURL.monstera;
+const HIBISCUS = elementsURL.hibiscus;
+const GLASSROSE = elementsURL.glassRose;
+const SUNFLOWERS = elementsURL.sunflowers;
+const ALMOND = elementsURL.almond;
+const BOUQUET = elementsURL.bouquet;
+
+let ranunculusActive = false;
+let roseActive = false;
+let monsteraActive = false;
+let hibiscusActive = false;
+let glassRoseActive = false;
+let sunflowersActive = false;
+let almondActive = false;
+let bouquetActive = false;
+
+function getScaleFactor(customSmallScale , customLargeScale) {
+    const screenWidth = window.innerWidth;
+    let scaleFactor;
+
+    if (screenWidth <= 480) {
+        scaleFactor = customSmallScale;
+    } else if (screenWidth <= 1024) {
+        scaleFactor = 0.5;
+    } else {
+        scaleFactor = customLargeScale;
+    }
+
+    return scaleFactor;
+}
+
