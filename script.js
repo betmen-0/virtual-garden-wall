@@ -120,3 +120,17 @@ function updateButtons() {
 
     layer.draw();
 }
+
+let circleActive = false;
+
+const circle = new Konva.Circle({
+    x: stage.width() / 2,
+    y: stage.height() / 2,
+    radius: 100,
+    fill: "ivory",
+    draggable: true,
+    name: "circle",
+});
+
+layer.add(circle);
+

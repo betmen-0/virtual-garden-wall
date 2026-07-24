@@ -40,3 +40,31 @@ canvas.addEventListener("click", (e) => {
     }
 });
 
+canvas.addEventListener("mousemove", (e) => {
+    const rect = canvas.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    console.table(
+        "clientX",
+        e.clientX,
+        "clientY",
+        e.clientY,
+        "x",
+        x,
+        "y",
+        y,
+        "rect.left",
+        rect.left ,
+        "rect.top",
+        rect.top
+    );
+});
+
+const download = document.getElementById("download");
+download.addEventListener("click", () => {
+    const link = document.createElement("a");
+    link.download = "garden.png";
+    link.href = canvas.toDataURL("image/png");
+    link.click();
+});
